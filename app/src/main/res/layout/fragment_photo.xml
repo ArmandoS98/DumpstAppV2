@@ -13,6 +13,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true"
         android:background="@drawable/white_rounded_button"
         android:id="@+id/btnLounchCamera"/>
 </RelativeLayout>

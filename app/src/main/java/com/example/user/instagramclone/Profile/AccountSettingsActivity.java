@@ -57,7 +57,7 @@ public class AccountSettingsActivity extends AppCompatActivity {
 
         mContext = AccountSettingsActivity.this;
         Log.d(TAG, "onCreate: ");
-        mViewPager = findViewById(R.id.container);
+        mViewPager = findViewById(R.id.viewpager_container);
         mRelativeLayout = findViewById(R.id.relLayout1);
 
         setupSettingsList();

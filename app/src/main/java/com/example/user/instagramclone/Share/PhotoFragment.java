@@ -34,11 +34,11 @@ public class PhotoFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_photo, container, false);
         Log.d(TAG, "onCreateView: stared.");
 
-        Button btnLaunchCamera = view.findViewById(R.id.btnLounchCamera);
+      Button btnLaunchCamera = view.findViewById(R.id.btnLounchCamera);
         btnLaunchCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d(TAG, "onClick: launching camera.");
+             Log.d(TAG, "onClick: launching camera.");
 
                 if (((ShareActivity)getActivity()).getCurrentTabNumber() == PHOTO_FRAGMENT_NUM){
                     if (((ShareActivity)getActivity()).checkPermissions(Permissions.CAMERA_PERMISSION[0])){

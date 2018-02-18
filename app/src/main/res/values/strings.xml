@@ -1,10 +1,12 @@
 <resources>
     <!--fragments name -->
-    <string name="app_name">InstagramClone</string>
+    <string name="app_name">DumpstApp</string>
     <string name="edit_profile_fragment">Edit Profile</string>
     <string name="view_post_fragment">View Post</string>
     <string name="sign_out_fragment">Sign Out</string>
     <string name="profile_fragment">Profile</string>
+    <string name="view_componens_fragment">View Comments</string>
+    <string name="view_profile_fragment">ViewProfile</string>
 
     <!--dialog name -->
     <string name="confirm_password_dialog">ConfirmPasswordDialog</string>
@@ -18,6 +20,8 @@
     <string name="dbname_user_account_settings">user_account_settings</string>
     <string name="dbname_photos">photos</string>
     <string name="dbname_user_photos">user_photos</string>
+    <string name="dbname_following">following</string>
+    <string name="dbname_followers">followers</string>
     <string name="field_username">username</string>
     <string name="field_email">email</string>
     <string name="field_display_name">display_name</string>
@@ -31,6 +35,7 @@
     <string name="field_photo_id">photo_id</string>
     <string name="field_tags">tags</string>
     <string name="field_image_path">image_path</string>
+    <string name="field_comments">comments</string>
 
     <!--Photo types -->
     <string name="new_photo">new_photo</string>
@@ -41,12 +46,17 @@
     <string name="selected_image">selected_image</string>
     <string name="selected_bitmap">selected_bitmap</string>
     <string name="return_to_fragment">return_to_fragment</string>
+    <string name="intent_user">intent_user</string>
 
     <!--Bundle arg names -->
     <string name="activity_number">activity_number</string>
+    <string name="bundle_photo">bundle_photo</string>
+    <string name="bundle_user_account_settings">bundle_user_account_settings</string>
 
     <!--Activity names -->
     <string name="profile_activity">Profile Activity</string>
+    <string name="search_activity">Search Activity</string>
+    <string name="home_activity">Home Activity</string>
 
     <!--strings -->
     <string name="gallery">GALLERY</string>
