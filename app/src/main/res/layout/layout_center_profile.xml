@@ -31,12 +31,13 @@
                     android:layout_marginLeft="25dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
                         android:id="@+id/profile_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
                         app:civ_border_color="@color/black"
-                        app:civ_border_width="0.5dp"
-                        android:layout_centerVertical="true"/>
+                        app:civ_border_width="0.5dp" />
 
                 </RelativeLayout>
 
@@ -68,7 +69,6 @@
                     android:id="@+id/display_name"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:text="Armando Santos"
                     android:textSize="16sp"/>
 
                 <TextView
@@ -76,7 +76,6 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/description"
                     android:textColor="@color/black"
-                    android:text="I live in Guatemala CA"
                     android:textSize="16sp"
                     android:layout_marginTop="5dp"/>
 
@@ -85,7 +84,6 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/website"
                     android:textColor="@color/blue"
-                    android:text="https://armandosantso.com"
                     android:textSize="16sp"
                     android:layout_marginTop="5dp" />
 
