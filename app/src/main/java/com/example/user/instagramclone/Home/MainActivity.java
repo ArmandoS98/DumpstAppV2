@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements MainfeedListAdapt
 
     }
 
-
     public void onCommentThreadSelected(Photo photo, String callingActivity){
         Log.d(TAG, "onCommentThreadSelected: selected a coemment thread");
 
@@ -89,7 +88,6 @@ public class MainActivity extends AppCompatActivity implements MainfeedListAdapt
         transaction.replace(R.id.container, fragment);
         transaction.addToBackStack(getString(R.string.view_componens_fragment));
         transaction.commit();
-
     }
 
     public void hideLayout(){
@@ -189,7 +187,6 @@ public class MainActivity extends AppCompatActivity implements MainfeedListAdapt
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
                 }
-                // ...
             }
         };
     }

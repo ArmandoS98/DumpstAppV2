@@ -290,9 +290,6 @@ public class ProfileFragment extends Fragment {
     }
 
     private void setProfileWidgets(UserSettings userSettings){
-        //Log.d(TAG, "setProfileWidgets: setting widgets wiht data retrieving from firebase database: " + userSettings.toString());
-        //Log.d(TAG, "setProfileWidgets: setting widgets wiht data retrieving from firebase database: " + userSettings.getSettings().getUsername());
-
         //User user = userSettings.getUser();
         UserAccountSettings settings = userSettings.getSettings();
 
