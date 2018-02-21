@@ -7,8 +7,6 @@
         android:layout_height="match_parent"
         android:background="@color/white">
 
-
-
         <!-- ********************Middle Section*************************** -->
 
         <RelativeLayout
@@ -35,8 +33,8 @@
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/profile_photo"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_centerVertical="true"
                         app:civ_border_color="@color/black"
                         app:civ_border_width="0.5dp"/>
@@ -71,7 +69,6 @@
                     android:id="@+id/display_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mitch"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
@@ -81,7 +78,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="I live in Vancouver, BC"
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
@@ -90,11 +86,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="https://codingwithmitch.com"
                     android:textColor="@color/blue"
                     android:textSize="16sp"
                     />
-
 
             </LinearLayout>
 

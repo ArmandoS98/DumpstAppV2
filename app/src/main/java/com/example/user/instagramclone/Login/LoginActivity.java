@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
                 String password = mPassword.getText().toString();
 
                 if (isStringNull(email) && isStringNull(password)){
-                    Toast.makeText(mContext, "You must fill out all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, "You must fill out all the fields", Toast.LENGTH_LONG).show();
                 }else{
                     mProgressbar.setVisibility(View.VISIBLE);
                     mPlaseWait.setVisibility(View.VISIBLE);
@@ -111,7 +111,7 @@ public class LoginActivity extends AppCompatActivity {
                                                 Intent intent = new Intent(mContext,MainActivity.class);
                                                 startActivity(intent);
                                             }else{
-                                                Toast.makeText(mContext, "Email is not verified \n check your email inbox.", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(mContext, "Email is not verified \n check your email inbox.", Toast.LENGTH_LONG).show();
                                                 mProgressbar.setVisibility(View.GONE);
                                                 mPlaseWait.setVisibility(View.GONE);
                                                 mAuth.signOut();
@@ -122,7 +122,7 @@ public class LoginActivity extends AppCompatActivity {
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Log.w(TAG, "signInWithEmail:failure", task.getException());
-                                        Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
 
                                         mProgressbar.setVisibility(View.GONE);
                                         mPlaseWait.setVisibility(View.GONE);

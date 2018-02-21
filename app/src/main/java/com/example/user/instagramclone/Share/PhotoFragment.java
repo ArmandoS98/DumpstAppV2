@@ -11,10 +11,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.user.instagramclone.Profile.AccountSettingsActivity;
 import com.example.user.instagramclone.R;
 import com.example.user.instagramclone.Utils.Permissions;
+
+import static android.app.Activity.RESULT_CANCELED;
 
 /**
  * Created by user on 18/01/2018.
@@ -68,33 +71,36 @@ public class PhotoFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == CAMERA_REQUEST_CODE){
-            Log.d(TAG, "onActivityResult: done taking a photo.");
-            Log.d(TAG, "onActivityResult: attempting to navigate to final  share screen.");
+        if(resultCode != RESULT_CANCELED){
+            if (requestCode == CAMERA_REQUEST_CODE && data != null){
+                Log.d(TAG, "onActivityResult: done taking a photo.");
+                Log.d(TAG, "onActivityResult: attempting to navigate to final  share screen.");
 
-            Bitmap bitmap;
-            bitmap = (Bitmap) data.getExtras().get("data");
-            if (isRootTask()){
-                try {
-                    Log.d(TAG, "onActivityResult: received new bitmap from camera: " + bitmap);
-                    Intent intent = new Intent(getActivity(), NextActivity.class);
-                    intent.putExtra(getString(R.string.selected_bitmap), bitmap);
-                    startActivity(intent);
-                }catch (NullPointerException e){
-                    Log.d(TAG, "onActivityResult: NullPointerException: " + e.getMessage());
-                }
-            }else{
-                try {
-                    Log.d(TAG, "onActivityResult: received new bitmap from camera: " + bitmap);
-                    Intent intent = new Intent(getActivity(), AccountSettingsActivity.class);
-                    intent.putExtra(getString(R.string.selected_bitmap), bitmap);
-                    intent.putExtra(getString(R.string.return_to_fragment), getString(R.string.edit_profile_fragment));
-                    startActivity(intent);
-                    getActivity().finish();
-                }catch (NullPointerException e){
-                    Log.d(TAG, "onActivityResult: NullPointerException: " + e.getMessage());
+                Bitmap bitmap;
+                bitmap = (Bitmap) data.getExtras().get("data");
+                if (isRootTask()){
+                    try {
+                        Log.d(TAG, "onActivityResult: received new bitmap from camera: " + bitmap);
+                        Intent intent = new Intent(getActivity(), NextActivity.class);
+                        intent.putExtra(getString(R.string.selected_bitmap), bitmap);
+                        startActivity(intent);
+                    }catch (NullPointerException e){
+                        Log.d(TAG, "onActivityResult: NullPointerException: " + e.getMessage());
+                    }
+                }else{
+                    try {
+                        Log.d(TAG, "onActivityResult: received new bitmap from camera: " + bitmap);
+                        Intent intent = new Intent(getActivity(), AccountSettingsActivity.class);
+                        intent.putExtra(getString(R.string.selected_bitmap), bitmap);
+                        intent.putExtra(getString(R.string.return_to_fragment), getString(R.string.edit_profile_fragment));
+                        startActivity(intent);
+                        getActivity().finish();
+                    }catch (NullPointerException e){
+                        Log.d(TAG, "onActivityResult: NullPointerException: " + e.getMessage());
+                    }
                 }
             }
         }
+
     }
 }
