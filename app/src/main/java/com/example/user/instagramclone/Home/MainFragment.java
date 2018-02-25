@@ -34,7 +34,6 @@ import java.util.Map;
 /**
  * Created by user on 18/01/2018.
  */
-
 public class MainFragment extends Fragment {
     private static final String TAG = "MainFragment";
 

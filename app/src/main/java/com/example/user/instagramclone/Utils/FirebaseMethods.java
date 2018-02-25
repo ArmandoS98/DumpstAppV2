@@ -93,7 +93,7 @@ public class FirebaseMethods {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     Uri firebaseUrl = taskSnapshot.getDownloadUrl();
 
-                    Toast.makeText(mContext, "photo upload sucess", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(mContext, "photo upload sucess", Toast.LENGTH_SHORT).show();
 
                     //add the new photo to 'photos' node and 'user_photos' node
                     addPhotoToDatabase(caption, firebaseUrl.toString());
@@ -114,9 +114,10 @@ public class FirebaseMethods {
                     double progress = (100 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount();
 
                     if (progress - 15 > mPhotoUploadProgress){
-                        Toast.makeText(mContext, "photo upload progress: " + String.format("%.0f",progress), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(mContext, "photo upload progress: " + String.format("%.0f",progress), Toast.LENGTH_SHORT).show();
                         mPhotoUploadProgress = progress;
                     }
+                    Toast.makeText(mContext, "Sending Image.", Toast.LENGTH_SHORT).show();
                     Log.d(TAG, "onProgress: upload progress: " + progress + "% done");
                 }
             });
@@ -145,7 +146,7 @@ public class FirebaseMethods {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     Uri firebaseUrl = taskSnapshot.getDownloadUrl();
 
-                    Toast.makeText(mContext, "photo upload sucess", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(mContext, "photo upload sucess", Toast.LENGTH_SHORT).show();
 
                     //insert into 'user_account_settings' node
                     setProfilePhoto(firebaseUrl.toString());
@@ -168,9 +169,10 @@ public class FirebaseMethods {
                     double progress = (100 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount();
 
                     if (progress - 15 > mPhotoUploadProgress){
-                        Toast.makeText(mContext, "photo upload progress: " + String.format("%.0f",progress), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(mContext, "photo upload progress: " + String.format("%.0f",progress), Toast.LENGTH_SHORT).show();
                         mPhotoUploadProgress = progress;
                     }
+                    Toast.makeText(mContext, "Sending Image.", Toast.LENGTH_SHORT).show();
                     Log.d(TAG, "onProgress: upload progress: " + progress + "% done");
                 }
             });

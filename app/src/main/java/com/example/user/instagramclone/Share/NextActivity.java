@@ -133,7 +133,6 @@ public class NextActivity extends AppCompatActivity {
     /**
      * Setup the firebase Auth Objects
      */
-
     private void setupFirebaseAuth(){
         Log.d(TAG, "setupFirebaseAuth: setting up firebase auth.");
         mAuth = FirebaseAuth.getInstance();
@@ -178,7 +177,6 @@ public class NextActivity extends AppCompatActivity {
         super.onStart();
         mAuth.addAuthStateListener(mAuthStateListener);
     }
-
 
     @Override
     public void onStop() {
