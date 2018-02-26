@@ -123,6 +123,7 @@ public class AccountSettingsActivity extends AppCompatActivity {
         ArrayList<String> options = new ArrayList<>();
         options.add(getString(R.string.edit_profile_fragment));
         options.add(getString(R.string.sign_out_fragment));
+        options.add(getString(R.string.abaut_us_fragment));
 
         ArrayAdapter adapter = new ArrayAdapter(mContext, android.R.layout.simple_list_item_1, options);
         listView.setAdapter(adapter);

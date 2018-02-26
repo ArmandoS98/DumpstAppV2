@@ -7,6 +7,7 @@
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <android.support.design.widget.TabLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -14,6 +15,7 @@
                 android:background="@drawable/white_gery_border_bottom">
 
             </android.support.design.widget.TabLayout>
+
         </android.support.design.widget.AppBarLayout>
 
     </RelativeLayout>

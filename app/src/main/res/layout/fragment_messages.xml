@@ -4,11 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imgDesarrollo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/coding"
+        android:layout_centerInParent="true"/>
+
     <TextView
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Messages Fragment"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:textSize="20sp"/>
+        android:text="En Desarrollo"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgDesarrollo"/>
+
 </RelativeLayout>

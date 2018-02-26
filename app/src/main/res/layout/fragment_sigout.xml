@@ -16,12 +16,12 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:id="@+id/tvConfirmSignout"
-            android:text="Are you sure you want to sign out?"/>
+            android:text="@string/are_you_sure_you_want_to_sign_out"/>
 
         <Button
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Sign Out"
+            android:text="@string/sign_out"
             android:layout_centerHorizontal="true"
             android:textSize="20sp"
             android:layout_below="@+id/tvConfirmSignout"

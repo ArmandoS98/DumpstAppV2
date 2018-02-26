@@ -21,4 +21,7 @@
         android:textStyle="bold"
         android:layout_below="@+id/imgDesarrollo"/>
 
+    <include layout="@layout/layout_botton_navigataon_view"/>
+
+
 </RelativeLayout>

@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Change Photo"
+                android:text="@string/change_photo"
                 android:id="@+id/changeProfilePhoto"
                 android:layout_below="@+id/profile_photo"
                 android:layout_centerHorizontal="true"
@@ -53,7 +53,7 @@
                     android:layout_marginLeft="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="UserName"/>
+                    android:hint="@string/text_hint_username"/>
             </RelativeLayout>
 
             <!-- Dispaly name sections -->
@@ -79,7 +79,7 @@
                     android:layout_marginLeft="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="Display Name"/>
+                    android:hint="@string/text_hint_display_name"/>
             </RelativeLayout>
 
             <!-- webSite sections -->
@@ -105,7 +105,7 @@
                     android:layout_marginLeft="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="webSite"/>
+                    android:hint="@string/text_hint_website"/>
             </RelativeLayout>
 
             <!-- description sections -->
@@ -131,14 +131,14 @@
                     android:layout_marginLeft="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="description"/>
+                    android:hint="@string/text_hint_description"/>
             </RelativeLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
-                android:text="PRIVATE INFORMATION"
+                android:text="@string/private_information"
                 android:layout_below="@id/relLayout4"
                 android:layout_centerHorizontal="true"
                 android:textAlignment="center"
@@ -171,7 +171,7 @@
                     android:layout_marginLeft="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="Email"/>
+                    android:hint="@string/text_hint_email"/>
             </RelativeLayout>
 
             <!-- email sections -->
@@ -197,8 +197,8 @@
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
                     android:background="@null"
-                    android:inputType="textNoSuggestions"
-                    android:hint="Phone Number"/>
+                    android:inputType="number"
+                    android:hint="@string/text_hint_phone_number"/>
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>

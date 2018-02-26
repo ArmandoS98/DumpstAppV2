@@ -4,6 +4,7 @@
     <string name="edit_profile_fragment">Edit Profile</string>
     <string name="view_post_fragment">View Post</string>
     <string name="sign_out_fragment">Sign Out</string>
+    <string name="abaut_us_fragment">About Us</string>
     <string name="profile_fragment">Profile</string>
     <string name="view_componens_fragment">View Comments</string>
     <string name="view_profile_fragment">ViewProfile</string>
@@ -64,4 +65,23 @@
     <string name="open_camera">Open Camera</string>
     <string name="string_next">Next</string>
     <string name="string_share">Share</string>
+    <string name="private_information">PRIVATE INFORMATION</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="text_hint_username">UserName</string>
+    <string name="text_hint_display_name">Display Name</string>
+    <string name="text_hint_website">webSite</string>
+    <string name="text_hint_description">description</string>
+    <string name="text_hint_email">Email</string>
+    <string name="text_hint_phone_number">Phone Number</string>
+    <string name="text_hint_password">Password</string>
+    <string name="text_button_login">Login</string>
+    <string name="text_hint_no_account_yet_create_one">No Account yet? Create one</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="are_you_sure_you_want_to_sign_out">Are you sure you want to sign out?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="cancel">CANCEL</string>
+    <string name="account_settings">Account Settings</string>
 </resources>
