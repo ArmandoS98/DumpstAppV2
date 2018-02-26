@@ -41,10 +41,10 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_elipses"
+                android:src="@drawable/ic_circle_point"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="5dp"
                 android:id="@+id/ivEllipses"/>
 
         </RelativeLayout>
@@ -124,7 +124,7 @@
                 android:textSize="16sp"
                 android:id="@+id/image_caption"
                 android:layout_below="@+id/image_likes"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="4dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,7 +142,7 @@
                 android:textSize="14sp"
                 android:layout_below="@+id/image_comments_link"
                 android:id="@+id/image_time_posted"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="3dp"/>
 
         </RelativeLayout>
 
