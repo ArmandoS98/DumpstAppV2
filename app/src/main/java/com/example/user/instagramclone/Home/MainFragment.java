@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.user.instagramclone.Models.Comment;
@@ -30,6 +31,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * Created by user on 18/01/2018.
@@ -98,6 +100,7 @@ public class MainFragment extends Fragment {
                     .child(mFollowing.get(i))
                     .orderByChild(getString(R.string.field_user_id))
                     .equalTo(mFollowing.get(i));
+
             query.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
@@ -114,8 +117,7 @@ public class MainFragment extends Fragment {
                         photo.setImage_path(objectMap.get(getString(R.string.field_image_path)).toString());
 
                         ArrayList<Comment> comments = new ArrayList<Comment>();
-                        for (DataSnapshot dSnapshot : singleSnapshot
-                                .child(getString(R.string.field_comments)).getChildren()){
+                        for (DataSnapshot dSnapshot : singleSnapshot.child(getString(R.string.field_comments)).getChildren()){
                             Comment comment = new Comment();
                             comment.setUser_id(dSnapshot.getValue(Comment.class).getUser_id());
                             comment.setComment(dSnapshot.getValue(Comment.class).getComment());
@@ -164,6 +166,7 @@ public class MainFragment extends Fragment {
 
                 mAdapter = new MainfeedListAdapter(getActivity(), R.layout.layout_mainfeed_listitem, mPaginatedPhotos);
                 mListView.setAdapter(mAdapter);
+
             }catch (NullPointerException e){
                 Log.e(TAG, "displayPhotos: NullPointerException: " + e.getMessage());
             }catch (IndexOutOfBoundsException e){

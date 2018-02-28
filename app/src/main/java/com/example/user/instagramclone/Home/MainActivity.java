@@ -115,9 +115,7 @@ public class MainActivity extends AppCompatActivity implements MainfeedListAdapt
         ImageLoader.getInstance().init(universalImageLoader.getConfig());
     }
 
-    /**
-     * Responsible for adding the 3 tabs: Camera, Home, Messages
-     */
+    //Responsible for adding the 3 tabs: Camera, Home, Messages
     private void setupViewPager(){
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new CameraFragment()); //index 0
@@ -134,9 +132,7 @@ public class MainActivity extends AppCompatActivity implements MainfeedListAdapt
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_arrows);
     }
 
-    /**
-     * BottomNavigationView setup
-     */
+    //BottomNavigationView setup
     private void setupBottomNavigationView(){
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.bottonNavView_bar);
@@ -147,15 +143,8 @@ public class MainActivity extends AppCompatActivity implements MainfeedListAdapt
         menuItem.setChecked(true);
     }
 
-
-     /*
-    ------------------------------------ Firebase ---------------------------------------------
-     */
-
-    /**
-     * checks to see if the @param 'user' is logged in
-     * @param user
-     */
+    //------------------------------------ Firebase ---------------------------------------------
+    //checks to see if the @param 'user' is logged in
     private void checkCurrentUser(FirebaseUser user){
         Log.d(TAG, "checkCurrentUser: checking if user is logged in.");
 
@@ -164,9 +153,8 @@ public class MainActivity extends AppCompatActivity implements MainfeedListAdapt
             startActivity(intent);
         }
     }
-    /**
-     * Setup the firebase auth object
-     */
+
+    //Setup the firebase auth object
     private void setupFirebaseAuth(){
         Log.d(TAG, "setupFirebaseAuth: setting up firebase auth.");
 
@@ -198,7 +186,6 @@ public class MainActivity extends AppCompatActivity implements MainfeedListAdapt
         mViewPager.setCurrentItem(MAIN_FRAGMENT);
         checkCurrentUser(mAuth.getCurrentUser());
     }
-
 
     @Override
     protected void onStop() {

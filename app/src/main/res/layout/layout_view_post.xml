@@ -37,14 +37,6 @@
                     android:id="@+id/username"
                     android:textColor="@color/black"/>
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_elipses"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"
-                    android:id="@+id/ivEllipses"/>
             </RelativeLayout>
             
             <com.example.user.instagramclone.Utils.SquareImageView
@@ -91,7 +83,6 @@
                     android:layout_height="40dp"
                     android:id="@+id/speech_bubble"
                     android:layout_toRightOf="@+id/heartLayout"
-                    android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_speech_bubble"
                     android:visibility="visible"
                     android:layout_centerVertical="true"/>
@@ -103,7 +94,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/relLayout3"
                 android:layout_below="@+id/relLayout2"
-                android:padding="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
                 android:layout_marginBottom="50dp"
                 android:background="@color/white">
 
@@ -111,23 +104,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:id="@+id/image_likes"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:id="@+id/image_caption"
                     android:layout_below="@+id/image_likes"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="4dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/gray"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:layout_below="@+id/image_caption"
                     android:id="@+id/image_comments_link"
                     android:layout_marginTop="5dp"/>
@@ -136,10 +129,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/gray"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:layout_below="@+id/image_comments_link"
                     android:id="@+id/image_time_posted"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="3dp"/>
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>

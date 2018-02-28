@@ -12,7 +12,6 @@
             android:id="@+id/tvPosts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="250"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +34,6 @@
             android:id="@+id/tvFollowers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="300"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -64,7 +62,6 @@
             android:id="@+id/tvFollowing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="400"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:layout_marginTop="2dp"
@@ -85,11 +82,11 @@
 
         <TextView
             android:id="@+id/follow"
-            android:layout_width="156dp"
-            android:layout_height="18dp"
+            android:layout_width="166dp"
+            android:layout_height="28dp"
             android:text="Follow"
-            android:textColor="@color/white"
-            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/textFollowers"
             android:layout_marginLeft="8dp"
@@ -99,16 +96,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="8dp"
             app:layout_constraintVertical_bias="0.0"
-            android:textAlignment="center"
-            android:background="@color/blue"/>
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/unfollow"
-            android:layout_width="156dp"
-            android:layout_height="18dp"
+            android:layout_width="166dp"
+            android:layout_height="28dp"
             android:text="Unfollow"
-            android:textColor="@color/white"
-            android:textSize="14sp"
+            android:textColor="@color/darkRed"
+            android:textSize="20sp"
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/textFollowers"
             android:layout_marginLeft="8dp"
@@ -119,8 +115,7 @@
             android:layout_marginBottom="8dp"
             app:layout_constraintVertical_bias="0.0"
             android:textAlignment="center"
-            android:visibility="gone"
-            android:background="@color/darkRed"/>
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/textEditProfile"

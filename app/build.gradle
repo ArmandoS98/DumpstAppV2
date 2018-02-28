@@ -50,6 +50,9 @@ dependencies {
     //Firebase Storage
     compile 'com.google.firebase:firebase-storage:11.8.0'
 
+    //FCM
+    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+
 }
 
 //Firebase

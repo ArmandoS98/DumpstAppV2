@@ -127,11 +127,17 @@ public class ViewComentsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "onClick: navigating back");
-                if (getCallingActivityFromBundle().equals(getString(R.string.home_activity))){
-                    getActivity().getSupportFragmentManager().popBackStack();
-                    ((MainActivity)getActivity()).showLayout();
+                if (getCallingActivityFromBundle() != null && getCallingActivityFromBundle().equals(getString(R.string.home_activity))){
+                    if (getCallingActivityFromBundle().equals(getString(R.string.home_activity))){
+                        getActivity().getSupportFragmentManager().popBackStack();
+                        ((MainActivity)getActivity()).showLayout();
+                    }else{
+                        getActivity().getSupportFragmentManager().popBackStack();
+                    }
                 }else{
+                    Log.d(TAG, "onClick: Erroe al dar Click");
                     getActivity().getSupportFragmentManager().popBackStack();
+
                 }
             }
         });
